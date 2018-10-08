@@ -3,61 +3,97 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <title>My Portfolio</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="logo">ERIC LIU</div>
+  <header>
+    <div class="wrapper">
+      <a class="logo" href="index.html">ERIC LIU</a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <h1>Hi, my name is Eric Liu. <br>
-      <span>Welcome to my portfolio site!</span></h1>
-    <div class="columns-container">
-      <div>
-        <h2>User Experience</h2>
-        <div class="column-2">
-          <img style="max-width: 100%;" src="img/Expert Mockup.png" alt="Example of UX Work">
-          <h3>Monocle: Find Your Expert</h3>
-        </div>
-        <div class="column-2">
-          <img style="max-width: 100%;" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350" alt="UX Work Sample 2">
-          <h3>Language Flash Cards</h3>
-        </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="welcome">
+      <div class="chevron-down">
+        <i class="fas fa-angle-double-down"></i>
       </div>
-      <div>
-        <h2>Typography</h2>
-        <div class="column-2">
-          <img style="max-width: 100%;" src="img/Gotham Poster.jpg" alt="Example of Typography Work">
-          <h3>Gotham: Architectural Typography</h3>
-        </div>
-        <div class="column-2">
-          <img style="max-width: 100%;" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350" alt="Typography Work Sample 2">
-          <h3>Typography Work Sample 2</h3>
-        </div>
+      <div class="wrapper intro">
+        <h1>Hi. I'm Eric <span>I'm an user experience designer with a background in support and analytics.</span></h1>
       </div>
-      <div>
-        <h2>Architecture</h2>
-        <div class="column-2">
-          <img style="max-width:100%;" src="img/Massing Model.jpg" alt="Architecture Work Sample 1">
-          <h3>Fire Station & Civic Center</h3>
+    </div>
+
+    <div id="work">
+      <div class="wrapper">
+        <div class="section-heading">
+          <h2>Work.</h2>
         </div>
-        <div class="column-2">
-          <img style="max-width:100%;" src="img/fliphouse.gif" alt="Architecture Work Sample 2">
-          <h3>Flip House</h3>
+
+        <a href="monocle.html">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div class="img-container">
+              <img src="img/Expert Mockup.png" alt="Example of UX Work">
+            </div>
+            <p>Monocle: Find Your Expert <span>UX Design</span></p>
+          </div>
+        </div>
+        </a>
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <img src="img/Gotham Poster.jpg" alt="Example of Typography Work">
+            <p>Gotham: Architecture in Type <span>Typography</span></p>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <img style="opacity: 0.8;" src="img/Massing Model.jpg" alt="Example of Architecture Work">
+            <p>Fire Station & Civic Center <span>Architecture Studio</span></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+  </main>
+
+  <footer id="contact">
+    <div class="wrapper">
+      <div class="section-heading">
+        <h2>Contact.</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 contact-blurb">
+          <p>
+            Currently based in Boston, I love UX design, my Shiba Inu, and Blue Bottle Coffee. I graduated from Boston University in 2014 with a degree in business before becoming a support engineer, a business analyst, and now UX designer.
+          </p>
+          <div>
+            <a href="mailto:eric@inliuoferic.com" class="button">Contact Me</a>
+          </div>
+          <ul>
+            <li><a href="https://www.behance.net/inliuoferic"><i class="fab fa-behance"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img style="opacity: 0.8;" src="img/Eric.jpg" alt="me">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>

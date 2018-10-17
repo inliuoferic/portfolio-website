@@ -223,7 +223,7 @@ nav li {
 }
 
 #work h2 {
-  text-align: left;
+  text-align: center;
 }
 
 #work h3 {
@@ -255,6 +255,35 @@ nav li {
   .casestudy img {
     width: 100%;
   }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  header .wrapper {
+    text-align: center;
+  }
+
+  header ul {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  header nav {
+    float: none;
+  }
+
+  header nav ul li:first-child {
+    margin: 0
+  }
+
+  #contact p {
+    font-size: 1em!important;
+  }
 }
 
 /*Footer
@@ -283,7 +312,7 @@ footer ul li:first-child {
 }
 
 #contact h2 {
-  text-align: left;
+  text-align: center;
   color: black;
 }
 

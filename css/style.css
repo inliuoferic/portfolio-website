@@ -15,18 +15,18 @@ html, body {
 }
 
 h1 {
-  font-size: 1.9em;
+  font-size: 2em;
   font-weight: 400;
   text-align: center;
 }
 
 h2 {
-  font-size: 3em;
-  font-weight: 700;
+  font-size: 1.7em;
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
@@ -73,6 +73,8 @@ a:active {
   transition: 0.2s opacity;
   display: inline-block;
   margin-top: 50px;
+  transition-duration: 0.5s;
+  transition-property: opacity;
 }
 
 .button:hover,
@@ -125,6 +127,36 @@ nav li {
     transform:translateY(-100%);
     width:100%;
     text-align:center;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  z-index:-1;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(-200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 5s;
+  animation-name: cloud-move;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes scooter-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(400px,50px);}
+}
+
+.scooter {
+  animation-duration: 10s;
+  animation-name: scooter-move;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 /*Containers and Columns
 ====================*/
@@ -247,6 +279,7 @@ nav li {
 .casestudy {
   text-align:center;
   background-color: #FFFFFF!important;
+  display:inline-block;
 }
 
 @media only screen and (max-width: 768px) {

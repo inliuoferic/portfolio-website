@@ -127,12 +127,16 @@ nav li {
     transform:translateY(-100%);
     width:100%;
     text-align:center;
+    display: inline-block;
 }
 
 .animation {
   position: absolute;
   top: 0;
   z-index:-1;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 @keyframes cloud-move {
@@ -165,7 +169,7 @@ nav li {
 }
 
 .wrapper {
-  max-width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -188,7 +192,7 @@ nav li {
 }
 
 .img-container {
-  max-height: 400px;
+  max-height: 350px;
   overflow: hidden;
   background-image: linear-gradient(to left, #a1c4fd, #c2e9fb);
   width: 100%;
@@ -197,7 +201,6 @@ nav li {
 
 [class*="col-"] {
   float: left;
-  padding: 4%;
 }
 
 .col-lg-4 {
@@ -282,7 +285,50 @@ nav li {
   display:inline-block;
 }
 
-@media only screen and (max-width: 768px) {
+.img-container {
+  position: relative;
+}
+
+.img-container-small {
+  position: relative;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.project-details {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.project-background {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: .5;
+}
+
+.project-description {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.col-lg-12 {
+  /* other rules... */
+  vertical-align:top;
+}
+
+@media only screen and (max-width: 700px) {
 
   /* For mobile phones: */
   .casestudy img {
@@ -290,11 +336,15 @@ nav li {
   }
 
   h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
+  }
+
+  header {
+    margin-top: 2rem;
   }
 
   header .wrapper {
@@ -308,6 +358,7 @@ nav li {
 
   header nav {
     float: none;
+    margin-top: 20px;
   }
 
   header nav ul li:first-child {
@@ -316,6 +367,14 @@ nav li {
 
   #contact p {
     font-size: 1em!important;
+  }
+
+  #welcome {
+    position: initial;
+  }
+
+  #work .img-container img {
+    max-width: 100%;
   }
 }
 

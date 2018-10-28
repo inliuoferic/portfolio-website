@@ -7,8 +7,8 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/css4diw.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>My Portfolio</title>
 </head>
 
@@ -19,7 +19,6 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#work">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -28,10 +27,10 @@
 
   <main>
     <div id="welcome">
-      <div class="chevron-down">
-        <i class="fas fa-angle-double-down"></i>
-      </div>
-      <div class="wrapper intro introcs">
+      <div class="bounce">
+      <i class="fas fa-angle-double-down"></i>
+    </div>
+      <div class="wrapper intro introcs" data-aos="fade-up">
         <img src="img/expert_mockup.png" alt="Example of UX Work">
       </div>
     </div>
@@ -98,9 +97,10 @@
         <h2>Contact.</h2>
       </div>
       <div class="row">
-        <div class="col-lg-6 contact-blurb">
+        <div class="contact-blurb">
+          <img src="img/Eric.jpg" alt="me">
           <p>
-            Currently based in Boston, I love UX design, my Shiba Inu, and Stumptown Coffee.
+            Currently based in Boston, I enjoy UX design, walking my Shiba Inu, and scouting out the nearest Blue Bottle Coffee. I graduated from Boston University in 2014 with a degree in business before becoming a support engineer, a business analyst, and now UX designer.
           </p>
           <div>
             <a href="mailto:eric@inliuoferic.com" class="button">Contact Me</a>
@@ -110,12 +110,13 @@
             <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
-        <div class="col-lg-6">
-          <img src="img/Eric.jpg" alt="me">
-        </div>
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
